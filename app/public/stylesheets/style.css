@@ -1,0 +1,48 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.dropdown-restlist{
+  display: none;
+  position absolute;
+}
+
+.dropdown{
+  position: relative;
+}
+
+.dropdown:hover .dropdown-restlist{
+  display: block;
+
+}
+
+ul.restlist li{
+  list-style-type: none;
+}
+
+nav.navbar ul{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+
+}
+a:link,a:visited{
+  display:block;
+  front-weight:bold;
+  color:black;
+  width: 120px;
+  padding: 5px;
+  text-align: center;
+  background-color: orange;
+  text-transform: lowercase;
+
+}
+nav.navbar li{
+  float:left;
+}
