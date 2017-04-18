@@ -35,6 +35,15 @@ nav.navbar ul{
   overflow:hidden;
 
 }
+
+.result {
+   height: 72px;
+   width: 100%;
+   border: 1px solid #000;
+ }
+ .result_hover {
+   border: 1px solid #fff;
+ }
 a:link,a:visited{
   display:block;
   front-weight:bold;
