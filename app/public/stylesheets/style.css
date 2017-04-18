@@ -24,7 +24,10 @@ a {
 ul.restlist li{
   list-style-type: none;
 }
-
+nav.navbar{
+  background-color:#222222;
+  padding: 30px;
+}
 nav.navbar ul{
   list-style-type: none;
   margin:0;
@@ -39,7 +42,7 @@ a:link,a:visited{
   width: 120px;
   padding: 5px;
   text-align: center;
-  background-color: orange;
+  background-color: lightgrey;
   text-transform: lowercase;
 
 }
