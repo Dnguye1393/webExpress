@@ -11,7 +11,7 @@ var rest = require('./routes/rest');
 var lights = require('./routes/lights');
 
 var app = express();
-var dbLights = require('./models/lights');
+
 var lightSchema = require('./models/lightSchema');
 
 // view engine setup
@@ -30,7 +30,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/about', about);
 app.use('/rest', rest);
-app.use('/lights', lights);
+app.use('/lights',lights);
+
 
 
 // catch 404 and forward to error handler
