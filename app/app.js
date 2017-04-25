@@ -4,14 +4,15 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
+var models = require('./models')
 var index = require('./routes/index');
 var about = require('./routes/about');
 var rest = require('./routes/rest');
+var lights = require('./routes/lights');
 
 var app = express();
-
-
+var dbLights = require('./models/lights');
+var lightSchema = require('./models/lightSchema');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -29,7 +30,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/about', about);
 app.use('/rest', rest);
-
+app.use('/lights', lights);
 
 
 // catch 404 and forward to error handler
