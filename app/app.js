@@ -8,7 +8,7 @@ var models = require('./models')
 var index = require('./routes/index');
 var about = require('./routes/about');
 var rest = require('./routes/rest');
-var lights = require('./routes/lights');
+var lights = require('./routes/api/lights');
 
 var app = express();
 
@@ -30,7 +30,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/about', about);
 app.use('/rest', rest);
-app.use('/lights',lights);
+app.use('/api/lights',lights);
 
 
 
